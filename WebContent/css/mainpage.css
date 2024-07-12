@@ -12,8 +12,12 @@
 body {
 	margin: 0;
 	padding: 0;
+<<<<<<< HEAD
 	font-family: Freesentation-9Black;
 	
+=======
+	font-family: 'NEXON Lv2 Gothic';
+>>>>>>> 45e1fa1ffb38ac2bdd5aaee521bd9a565f926ce0
 }
 
 a {
@@ -195,12 +199,51 @@ header {
 	font-weight: bold;
 }
 
-body {
-	font-family: 'NEXON Lv2 Gothic';
-}
 
-a {
-	text-decoration: none;
-	color: black;
-	font-weight: bold;
+
+/*  neighborhood */
+
+.hood-box{
+
+}
+.hood-nav{
+    display: flex;
+}
+.hood-nav-button{
+    border: none;
+    background-color: white;
+    border: 1px solid lightgray;
+    border-radius: 20px;
+    padding: 8px 15px;
+    font-weight: bold;
+
+}
+.hood-box-list{
+    border-bottom: 1px solid lightgray;
+    border-top: 1px solid lightgray;
+}
+.hood-box-con{
+    border-bottom: 1px solid lightgray;
+    text-align: left;
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+.hood-box-con h5{
+    font-weight: bolder;
+    font-size: 19px;
+    padding-bottom: 1rem;
+}
+.hood-box-con p{
+    font-size: 15px;
+    padding-bottom: 25px;
+}
+.hood-box-con span{
+    font-size: 13px;
+}
+.hood-box-counts a{
+    font-size: 13px;
+    color:darkgray;
+}
+.box-left{
+    border-right: 1px solid lightgray;
 }
