@@ -5,10 +5,8 @@
 <header class="container">
 	<div class="row">
 		<div class="col-6 menu">
+			<a href="#" id="logo">배추</a>
 			<ul>
-				<a href="#">
-					<li id="logo">당근</li>
-				</a>
 				<li><a href="#">홈</a></li>
 				<li><a href="secondhand.shm">중고거래</a></li>
 				<li><a href="neighborhood.shm">동네생활</a></li>

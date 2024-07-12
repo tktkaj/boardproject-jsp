@@ -44,11 +44,15 @@ header {
 }
 
 #logo {
-	color: #FF6F0F;
-	font-weight: bold;
+	color: #015045;
+	font-weight: bolder;
 	font-size: 30px;
 }
-
+.menu{
+	display: flex;
+	gap:40px;
+	padding-bottom: 1rem;
+}
 .menu ul {
 	margin: 0;
 	padding: 0;
@@ -60,6 +64,7 @@ header {
 	display: flex;
 	align-items: center;
 	font-size: 17px;
+	font-weight: bold;
 }
 
 .util {
@@ -89,7 +94,7 @@ header {
 .top-banner {
 	width: 100%;
 	height: 315px;
-	background-color: #FFF1AA;
+	background-color: #B6D5C9;
 }
 
 .top-banner-content {
@@ -99,7 +104,7 @@ header {
 }
 
 .top-banner-title {
-	padding-top: 50px;
+	padding-top: 55px;
 	margin-right: 60px;
 }
 
