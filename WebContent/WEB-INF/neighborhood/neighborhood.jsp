@@ -23,7 +23,7 @@
 					<article class="col hood-box-con box-left">
 						<div class="row">
 							<div class="col col-8">
-								<a href="">
+								<a href="nbdetail.shm">
 									<h5>메이커스 마크 30만원어치 샀다</h5>
 									<p>12병이나 되네 나도 이제 버번파</p> <span>와구리</span>
 								</a>
