@@ -10,7 +10,7 @@
 <body>
 	<main>
         <div class="hood-box">
-            <ul class="hood-nav">
+          <ul class="hood-nav container">
                 <li><button class="hood-nav-button">인기글</button></li>
                 <li><button class="hood-nav-button">맛집</button></li>
                 <li><button class="hood-nav-button">동네친구</button></li>

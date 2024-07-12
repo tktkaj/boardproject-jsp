@@ -12,12 +12,7 @@
 body {
 	margin: 0;
 	padding: 0;
-<<<<<<< HEAD
-	font-family: Freesentation-9Black;
-	
-=======
 	font-family: 'NEXON Lv2 Gothic';
->>>>>>> 45e1fa1ffb38ac2bdd5aaee521bd9a565f926ce0
 }
 
 a {
@@ -64,7 +59,6 @@ header {
 .menu li {
 	display: flex;
 	align-items: center;
-	list-style: none;
 	font-size: 17px;
 }
 
@@ -84,7 +78,6 @@ header {
 .util li {
 	display: flex;
 	align-items: center;
-	list-style: none;
 	font-size: 17px;
 }
 
@@ -208,6 +201,14 @@ header {
 }
 .hood-nav{
     display: flex;
+    gap: 5px;
+    align-items: center;
+    padding: 0;
+}
+.hood-nav span{
+    position: relative;
+    left: 750px;
+    font-size: 14px;
 }
 .hood-nav-button{
     border: none;
@@ -216,7 +217,6 @@ header {
     border-radius: 20px;
     padding: 8px 15px;
     font-weight: bold;
-
 }
 .hood-box-list{
     border-bottom: 1px solid lightgray;
