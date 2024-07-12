@@ -39,11 +39,11 @@ public class HomeController extends HttpServlet {
 		switch (context) {
 		
 		case "/secondhand.shm":
-			request.setAttribute("main", "/WEB-INF/secondhand.jsp");
+			request.setAttribute("main", "/WEB-INF/secondhand/secondhand.jsp");
 			
 			break;
 		case "/neighborhood.shm":
-			request.setAttribute("main", "/WEB-INF/neighborhood.jsp");
+			request.setAttribute("main", "/WEB-INF/neighborhood/neighborhood.jsp");
 
 			break;
 
