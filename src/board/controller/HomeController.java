@@ -44,6 +44,10 @@ public class HomeController extends HttpServlet {
 			break;
 		case "/neighborhood.shm":
 			request.setAttribute("main", "/WEB-INF/neighborhood/neighborhood.jsp");
+			
+			break;
+		case "/nbdetail.shm":
+			request.setAttribute("main", "/WEB-INF/neighborhood/nbdetail.jsp");
 
 			break;
 
