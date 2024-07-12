@@ -13,6 +13,7 @@ body {
 	margin: 0;
 	padding: 0;
 	font-family: Freesentation-9Black;
+	
 }
 
 a {
@@ -39,7 +40,7 @@ li {
 }
 
 /* header */
-.header {
+header {
 	padding-top: 20px;
 }
 
