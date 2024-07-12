@@ -11,5 +11,6 @@
 			<property name="JDBC.Password" value="${password}" />
 		</dataSource>
 	</transactionManager>
-	<sqlMap resource="board/ibatis/*.xml" />
+	<sqlMap resource="board/ibatis/nbboard.xml" />
+	<sqlMap resource="board/ibatis/shboard.xml" />
 </sqlMapConfig>
