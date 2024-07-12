@@ -241,6 +241,10 @@ header {
 .hood-box-con span{
     font-size: 13px;
 }
+.hood-region::after{
+    content: " | ";
+    background-size: cover;
+}
 .hood-box-counts a{
     font-size: 13px;
     color:darkgray;

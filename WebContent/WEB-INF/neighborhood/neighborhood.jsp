@@ -26,7 +26,7 @@
 								<a href="nbdetail.shm">
 									<h5>메이커스 마크 30만원어치 샀다</h5>
 									<p>12병이나 되네 나도 이제 버번파</p> 
-									<span>경기 구리시 토평동</span>
+									<span class="hood-region">경기 구리시 토평동</span>
 									<span>와구리</span>
 								</a>
 								<div class="hood-box-counts">
@@ -46,7 +46,7 @@
 								<a href="">
 									<h5>메이커스 마크 30만원어치 샀다</h5>
 									<p>12병이나 되네 나도 이제 버번파</p> 
-									<span>경기 구리시 토평동</span>
+									<span class="hood-region">경기 구리시 토평동</span>
 									<span>와구리</span>
 								</a>
 								<div class="hood-box-counts">
@@ -68,7 +68,7 @@
 								<a href="">
 									<h5>메이커스 마크 30만원어치 샀다</h5>
 									<p>12병이나 되네 나도 이제 버번파</p> 
-									<span>경기 구리시 토평동</span>
+									<span class="hood-region">경기 구리시 토평동</span>
 									<span>와구리</span>
 								</a>
 								<div class="hood-box-counts">
@@ -88,7 +88,7 @@
 								<a href="">
 									<h5>메이커스 마크 30만원어치 샀다</h5>
 									<p>12병이나 되네 나도 이제 버번파</p> 
-									<span>경기 구리시 토평동</span>
+									<span class="hood-region">경기 구리시 토평동</span>
 									<span>와구리</span>
 								</a>
 								<div class="hood-box-counts">
