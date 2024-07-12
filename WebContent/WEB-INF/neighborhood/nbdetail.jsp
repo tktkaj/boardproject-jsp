@@ -3,32 +3,63 @@
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
 <main class="nb container">
-	<div>
-		<div>
-			<h5>
-				<a>토픽</a> > <a>성격유형</a>
-			</h5>
-			<h3>보닌이 겪은 ESTJ</h3>
-			<p>신**</p>
-			<span>조회수</span>
-		</div>
-		<div class="nb-content">
-			<div class="txt"></div>
-			장단점좀 풀어줘봐 ESTJ한테 맞고와서 아프니까
-			<div class="info">
-				<sapn>댓글수</sapn>
+	<div class="row">
+		<div class="col col-5">
+			<div class="topic-box">
+				<h5 class="topic">
+					<a href="#" class="topic-after">토픽</a> <a href="#">생활/편의</a>
+				</h5>
+				<h4>메이커스 마크 30만원어치 샀다</h4>
+				<p class="user-info">
+					<span> <a href="#">경기 구리시 토평동</a>
+					</span> ·
+					<sapn>와구리</span>
+				</p>
+				<div class="board-info">
+					<span class="readcount"> <i class="fi fi-rs-eye">&nbsp;12</i>
+					</span> <span class="ripple"> <i class="fi fi-rs-comment">&nbsp;13</i>
+					</span>
+				</div>
 			</div>
-		</div>
-		<div>댓글 25개 더보기</div>
-		<div>
-			<p>케이엠</p>
-			<div>
-				1.일 미루거나 해야할거 미루는거 이해못함<br /> (ESTJ:차라리 먼저 끝내는게 속편하지 않나?)<br /> <br />
-				2.공감능력 떨어짐<br /> (ESTJ:이미 지난일이고 앞으로 어떻게 할지 생각해야지?)<br /> <br />
-				3.조금이라도 이해 안가거나 부당하다 생각하면 논리적으로 뼈 때려 부심<br /> (ESTJ : 이게 맞잖아?그치?)<br />
+			<div class="nb-content">
+				<div class="txt">12병이나 되네 나도 이제 버번파</div>
+				<div class="like-box">
+					<span>
+						<button onclick="">
+							<i class="fi fi-rr-heart icon">&nbsp;좋아요</i>
+						</button>
+					</span> <span> <i class="fi fi-rs-comment">&nbsp;13</i>
+					</span>
+				</div>
+			</div>
+			<div class="nb-input-box">
+				<form action="#" method="post">
+					<input type="text" name="ripple" placeholder="    댓글을 입력해주세요" />
+					<button class="btn btn-light" ype="submit">답글달기</button>
+				</form>
+			</div>
+			<div class="ripple-box">
+				<button type="button" onclick="">댓글 25개 더보기</button>
+			</div>
+			<!-- 여기는 댓글 반복할 구간! -->
+			<div class="ripple-board">
+				<p>
+					<a href="#">케이엠</a> · <span>뽀구리</span>
+				</p>
+				<div class="ripple-content">뭐래 소주가 좋아..</div>
+				<div class="ripple-info">
+					<span>
+						<button type="button" onclick="">
+							<i class="fi fi-rr-heart icon">&nbsp;좋아요</i>
+						</button>
+					</span> <span> <i class="fi fi-rs-comment">&nbsp;0</i>
+					</span> <span>
+						<button type="button" onclick="">
+							<i class="fi fi-bs-menu-dots"></i>
+						</button>
+					</span>
+				</div>
 			</div>
 		</div>
 	</div>
-
-
 </main>
