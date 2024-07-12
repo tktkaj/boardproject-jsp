@@ -5,7 +5,10 @@
 <header class="container">
 	<div class="row">
 		<div class="col-6 menu">
-			<a href="#" id="logo">배추</a>
+			<a href="#" id="logo">
+			<img alt="logo" src="img/logo.png">
+			양배추
+			</a>
 			<ul>
 				<li><a href="#">홈</a></li>
 				<li><a href="secondhand.shm">중고거래</a></li>
