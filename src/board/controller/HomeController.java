@@ -1,6 +1,8 @@
 package board.controller;
 
 import java.io.IOException;
+
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -9,17 +11,50 @@ import javax.servlet.http.HttpServletResponse;
 
 @WebServlet("*.shm")
 public class HomeController extends HttpServlet {
-	
-	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+
+	protected void doGet(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
 		reqPro(request, response);
 	}
 
-	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	protected void doPost(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
 		reqPro(request, response);
 	}
-	
-	protected void reqPro(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+
+	protected void reqPro(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
+
+		request.setCharacterEncoding("UTF-8");
+		response.setContentType("text/html; charset=UTF-8");
+
+		String url = request.getRequestURI();
+
+		String contextPath = request.getContextPath();
+
+		String context = url.substring(contextPath.length());
+
+		String viewpage = "/WEB-INF/mainpage";
+
+		switch (context) {
 		
+		case "/secondhand.shm":
+			request.setAttribute("main", "/WEB-INF/secondhand.jsp");
+			
+			break;
+		case "/neighborhood.shm":
+			request.setAttribute("main", "/WEB-INF/neighborhood.jsp");
+
+			break;
+
+		default:
+			break;
+		}
+		
+		viewpage += ".jsp";
+		RequestDispatcher dis = request.getRequestDispatcher(viewpage);
+		dis.forward(request, response);
+
 	}
 
 }

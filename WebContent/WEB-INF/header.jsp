@@ -10,8 +10,8 @@
 					<li id="logo">당근</li>
 				</a>
 				<li><a href="#">홈</a></li>
-				<li><a href="#">중고거래</a></li>
-				<li><a href="#">동네생활</a></li>
+				<li><a href="secondhand.shm">중고거래</a></li>
+				<li><a href="neighborhood.shm">동네생활</a></li>
 			</ul>
 		</div>
 		<div class="col-6 util">
