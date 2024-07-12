@@ -206,10 +206,15 @@ header {
     align-items: center;
     padding: 0;
 }
-.hood-nav span{
+.hood-nav-sort{
     position: relative;
     left: 750px;
     font-size: 14px;
+}
+.hood-nav-sort i{
+	margin-right: 5px;
+	position: relative;
+	top:2px;
 }
 .hood-nav-button{
     border: none;
@@ -245,10 +250,16 @@ header {
     content: " | ";
     background-size: cover;
 }
+.hood-box-counts i{
+	position: relative;
+	top:3px;
+}
 .hood-box-counts a{
     font-size: 13px;
     color:darkgray;
+    margin-right: 15px;
 }
+
 .hood-box-img{
     width: 135px;
 }

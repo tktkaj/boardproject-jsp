@@ -17,8 +17,11 @@
 	integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
 	crossorigin="anonymous"></script><!-- 부트스트랩 cdn주소 -->
 <link rel="stylesheet" href="css/mainpage.css"> <!-- mainpage.css 링크 -->
+<!-- 플래티콘 cdn주소 -->
 <link rel='stylesheet'
-	href='https://cdn-uicons.flaticon.com/2.4.2/uicons-regular-straight/css/uicons-regular-straight.css'> <!-- 플래티콘 cdn주소 -->
+	href='https://cdn-uicons.flaticon.com/2.4.2/uicons-regular-straight/css/uicons-regular-straight.css'>
+<link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.4.2/uicons-bold-rounded/css/uicons-bold-rounded.css'>
+<link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.4.2/uicons-regular-rounded/css/uicons-regular-rounded.css'> 
 </head>
 <body>
 	<jsp:include page="header.jsp"></jsp:include>

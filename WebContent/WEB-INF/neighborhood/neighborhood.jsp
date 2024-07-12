@@ -16,7 +16,7 @@
 				<li><button class="hood-nav-button">동네친구</button></li>
 				<li><button class="hood-nav-button">생활/편의</button></li>
 				<li><button class="hood-nav-button">분실/실종</button></li>
-				<li><span><a>최신순</a></span></li>
+				<li><span class="hood-nav-sort"><a><i class="fi fi-br-sort-alt"></i>최신순</a></span></li>
 			</ul>
 			<section class="container text-center hood-box-list">
 				<div class="row">
@@ -25,12 +25,14 @@
 							<div class="col col-8">
 								<a href="nbdetail.shm">
 									<h5>메이커스 마크 30만원어치 샀다</h5>
-									<p>12병이나 되네 나도 이제 버번파</p> 
-									<span class="hood-region">경기 구리시 토평동</span>
-									<span>와구리</span>
+									<p>12병이나 되네 나도 이제 버번파</p> <span class="hood-region">경기
+										구리시 토평동</span> <span>와구리</span>
 								</a>
 								<div class="hood-box-counts">
-									<a href="">50</a> <a href="">10</a> <a href="">5</a>
+									<a href=""> <i class="fi fi-rr-eye"></i> 50 </a> <a href="">
+										<i class="fi fi-rr-heart"></i> 15
+									</a> <a href=""> <i class="fi fi-rr-comment-alt-dots"></i> 5
+									</a>
 								</div>
 							</div>
 							<div class="col col-lg-2">
@@ -45,12 +47,14 @@
 							<div class="col col-8">
 								<a href="">
 									<h5>메이커스 마크 30만원어치 샀다</h5>
-									<p>12병이나 되네 나도 이제 버번파</p> 
-									<span class="hood-region">경기 구리시 토평동</span>
-									<span>와구리</span>
+									<p>12병이나 되네 나도 이제 버번파</p> <span class="hood-region">경기
+										구리시 토평동</span> <span>와구리</span>
 								</a>
 								<div class="hood-box-counts">
-									<a href="">50</a> <a href="">10</a> <a href="">5</a>
+									<a href=""> <i class="fi fi-rr-eye"></i> 50
+									</a> <a href=""> <i class="fi fi-rr-heart"></i> 15
+									</a> <a href=""> <i class="fi fi-rr-comment-alt-dots"></i> 5
+									</a>
 								</div>
 							</div>
 							<div class="col col-lg-2">
@@ -67,12 +71,14 @@
 							<div class="col col-8">
 								<a href="">
 									<h5>메이커스 마크 30만원어치 샀다</h5>
-									<p>12병이나 되네 나도 이제 버번파</p> 
-									<span class="hood-region">경기 구리시 토평동</span>
-									<span>와구리</span>
+									<p>12병이나 되네 나도 이제 버번파</p> <span class="hood-region">경기
+										구리시 토평동</span> <span>와구리</span>
 								</a>
 								<div class="hood-box-counts">
-									<a href="">50</a> <a href="">10</a> <a href="">5</a>
+									<a href=""> <i class="fi fi-rr-eye"></i> 50
+									</a> <a href=""> <i class="fi fi-rr-heart"></i> 15
+									</a> <a href=""> <i class="fi fi-rr-comment-alt-dots"></i> 5
+									</a>
 								</div>
 							</div>
 							<div class="col col-lg-2">
@@ -87,12 +93,14 @@
 							<div class="col col-8">
 								<a href="">
 									<h5>메이커스 마크 30만원어치 샀다</h5>
-									<p>12병이나 되네 나도 이제 버번파</p> 
-									<span class="hood-region">경기 구리시 토평동</span>
-									<span>와구리</span>
+									<p>12병이나 되네 나도 이제 버번파</p> <span class="hood-region">경기
+										구리시 토평동</span> <span>와구리</span>
 								</a>
 								<div class="hood-box-counts">
-									<a href="">50</a> <a href="">10</a> <a href="">5</a>
+									<a href=""> <i class="fi fi-rr-eye"></i> 50
+									</a> <a href=""> <i class="fi fi-rr-heart"></i> 15
+									</a> <a href=""> <i class="fi fi-rr-comment-alt-dots"></i> 5
+									</a>
 								</div>
 							</div>
 							<div class="col col-lg-2">
