@@ -197,8 +197,9 @@ header {
 /*  neighborhood */
 
 .hood-box{
-
+    margin-top: 30px;
 }
+
 .hood-nav{
     display: flex;
     gap: 5px;
@@ -215,7 +216,7 @@ header {
     background-color: white;
     border: 1px solid lightgray;
     border-radius: 20px;
-    padding: 8px 15px;
+    padding: 7px 15px;
     font-weight: bold;
 }
 .hood-box-list{
@@ -243,6 +244,9 @@ header {
 .hood-box-counts a{
     font-size: 13px;
     color:darkgray;
+}
+.hood-box-img{
+    width: 135px;
 }
 .box-left{
     border-right: 1px solid lightgray;
