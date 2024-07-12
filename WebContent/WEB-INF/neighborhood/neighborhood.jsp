@@ -32,7 +32,7 @@
 								</div>
 							</div>
 							<div class="col col-lg-2">
-								<a href=""> <img src="img/nh-img1.jpg" alt=""
+								<a href="nbdetail.shm"> <img src="img/nh-img1.jpg" alt=""
 									class="hood-box-img">
 								</a>
 							</div>
@@ -50,7 +50,7 @@
 								</div>
 							</div>
 							<div class="col col-lg-2">
-								<a href=""> <img src="img/nh-img1.jpg" alt=""
+								<a href="nbdetail.shm"> <img src="img/nh-img1.jpg" alt=""
 									class="hood-box-img">
 								</a>
 							</div>
@@ -70,7 +70,7 @@
 								</div>
 							</div>
 							<div class="col col-lg-2">
-								<a href=""> <img src="img/nh-img1.jpg" alt=""
+								<a href="nbdetail.shm"> <img src="img/nh-img1.jpg" alt=""
 									class="hood-box-img">
 								</a>
 							</div>
@@ -88,7 +88,7 @@
 								</div>
 							</div>
 							<div class="col col-lg-2">
-								<a href=""> <img src="img/nh-img1.jpg" alt=""
+								<a href="nbdetail.shm"> <img src="img/nh-img1.jpg" alt=""
 									class="hood-box-img">
 								</a>
 							</div>
