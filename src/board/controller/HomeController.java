@@ -57,7 +57,10 @@ public class HomeController extends HttpServlet {
                 service.selectByIdx(request, response);
 
                 break;
+            case "/login.shm":
+                request.setAttribute("main", "/WEB-INF/login/login.jsp");
 
+                break;
             default:
                 break;
         }

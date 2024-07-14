@@ -17,7 +17,7 @@
 		</div>
 		<div class="col-6 util">
 			<ul>
-				<li><a href=""><i class="fi fi-rs-user"></i>
+				<li><a href="login.shm"><i class="fi fi-rs-user"></i>
 				</a></li>
 				<li><a href=""><i class="fi fi-rs-user-add"></i>
 				</a></li>

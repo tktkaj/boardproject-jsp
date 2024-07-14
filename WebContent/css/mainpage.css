@@ -295,7 +295,7 @@ header {
 }
 
 .nb .topic-after::after {
-	content: '£¾';
+	content: 'ï¿½ï¿½';
 	margin-left: 10px;
 }
 

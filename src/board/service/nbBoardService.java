@@ -49,7 +49,6 @@ public class nbBoardService {
         } catch (Exception e) {
             e.printStackTrace();
         }
-        System.out.println(dto);
         request.setAttribute("dto", dto);
     }
 }
