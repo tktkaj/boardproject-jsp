@@ -1,120 +1,133 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-	pageEncoding="UTF-8"%>
-<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+         pageEncoding="UTF-8" %>
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<title>Insert title here</title>
+    <meta charset="UTF-8">
+    <title>Insert title here</title>
 </head>
 <body>
-	<main>
-		<div class="hood-box container">
-			<ul class="hood-nav">
-				<li><button class="hood-nav-button">인기글</button></li>
-				<li><button class="hood-nav-button">맛집</button></li>
-				<li><button class="hood-nav-button">동네친구</button></li>
-				<li><button class="hood-nav-button">생활/편의</button></li>
-				<li><button class="hood-nav-button">분실/실종</button></li>
-				<li><span class="hood-nav-sort"><a><i class="fi fi-br-sort-alt"></i>최신순</a></span></li>
-			</ul>
-			<section class="container text-center hood-box-list">
-				<div class="row">
-					<article class="col hood-box-con box-left">
-						<div class="row">
-							<div class="col col-8">
-								<a href="nbdetail.shm">
-									<h5>메이커스 마크 30만원어치 샀다</h5>
-									<p>12병이나 되네 나도 이제 버번파</p> <span class="hood-region">경기
+<main>
+    <div class="hood-box container">
+        <ul class="hood-nav">
+            <li>
+                <button class="hood-nav-button">인기글</button>
+            </li>
+            <li>
+                <button class="hood-nav-button">맛집</button>
+            </li>
+            <li>
+                <button class="hood-nav-button">동네친구</button>
+            </li>
+            <li>
+                <button class="hood-nav-button">생활/편의</button>
+            </li>
+            <li>
+                <button class="hood-nav-button">분실/실종</button>
+            </li>
+            <li><span class="hood-nav-sort"><a><i class="fi fi-br-sort-alt"></i>최신순</a></span></li>
+        </ul>
+        <section class="container text-center hood-box-list">
+            <c:set var="i" value="0"/>
+            <c:forEach var="board" items="${list}" begin="0" step="2">
+                <div class="row">
+                    <article class="col hood-box-con box-left">
+                        <div class="row">
+                            <div class="col col-8">
+                                <a href="nbdetail.shm">
+                                    <h5>${board.title}</h5>
+                                    <p>${board.content}</p> <span class="hood-region">${board.region}</span>
+                                    <span>${board.nickName}</span>
+                                </a>
+                                <div class="hood-box-counts">
+                                    <a href=""> <i class="fi fi-rr-eye"></i> ${board.readCount} </a> <a href="">
+                                    <i class="fi fi-rr-heart">${board.likeCount}</i>
+                                </a> <a href=""> <i class="fi fi-rr-comment-alt-dots"></i> ${board.recommendCount}
+                                </a>
+                                </div>
+                            </div>
+                            <div class="col col-lg-2">
+                                <a href="nbdetail.shm"> <img src="img/${board.img}" alt=""
+                                                             class="hood-box-img" height="80%">
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="col hood-box-con">
+                        <div class="row">
+                            <div class="col col-8">
+                                <a href="">
+                                    <h5>메이커스 마크 30만원어치 샀다</h5>
+                                    <p>12병이나 되네 나도 이제 버번파</p> <span class="hood-region">경기
 										구리시 토평동</span> <span>와구리</span>
-								</a>
-								<div class="hood-box-counts">
-									<a href=""> <i class="fi fi-rr-eye"></i> 50 </a> <a href="">
-										<i class="fi fi-rr-heart"></i> 15
-									</a> <a href=""> <i class="fi fi-rr-comment-alt-dots"></i> 5
-									</a>
-								</div>
-							</div>
-							<div class="col col-lg-2">
-								<a href="nbdetail.shm"> <img src="img/nh-img1.jpg" alt=""
-									class="hood-box-img">
-								</a>
-							</div>
-						</div>
-					</article>
-					<article class="col hood-box-con">
-						<div class="row">
-							<div class="col col-8">
-								<a href="">
-									<h5>메이커스 마크 30만원어치 샀다</h5>
-									<p>12병이나 되네 나도 이제 버번파</p> <span class="hood-region">경기
-										구리시 토평동</span> <span>와구리</span>
-								</a>
-								<div class="hood-box-counts">
-									<a href=""> <i class="fi fi-rr-eye"></i> 50
-									</a> <a href=""> <i class="fi fi-rr-heart"></i> 15
-									</a> <a href=""> <i class="fi fi-rr-comment-alt-dots"></i> 5
-									</a>
-								</div>
-							</div>
-							<div class="col col-lg-2">
-								<a href="nbdetail.shm"> <img src="img/nh-img1.jpg" alt=""
-									class="hood-box-img">
-								</a>
-							</div>
-						</div>
-					</article>
-				</div>
-				<div class="row">
-					<article class="col hood-box-con box-left">
-						<div class="row">
-							<div class="col col-8">
-								<a href="">
-									<h5>메이커스 마크 30만원어치 샀다</h5>
-									<p>12병이나 되네 나도 이제 버번파</p> <span class="hood-region">경기
-										구리시 토평동</span> <span>와구리</span>
-								</a>
-								<div class="hood-box-counts">
-									<a href=""> <i class="fi fi-rr-eye"></i> 50
-									</a> <a href=""> <i class="fi fi-rr-heart"></i> 15
-									</a> <a href=""> <i class="fi fi-rr-comment-alt-dots"></i> 5
-									</a>
-								</div>
-							</div>
-							<div class="col col-lg-2">
-								<a href="nbdetail.shm"> <img src="img/nh-img1.jpg" alt=""
-									class="hood-box-img">
-								</a>
-							</div>
-						</div>
-					</article>
-					<article class="col hood-box-con">
-						<div class="row">
-							<div class="col col-8">
-								<a href="">
-									<h5>메이커스 마크 30만원어치 샀다</h5>
-									<p>12병이나 되네 나도 이제 버번파</p> <span class="hood-region">경기
-										구리시 토평동</span> <span>와구리</span>
-								</a>
-								<div class="hood-box-counts">
-									<a href=""> <i class="fi fi-rr-eye"></i> 50
-									</a> <a href=""> <i class="fi fi-rr-heart"></i> 15
-									</a> <a href=""> <i class="fi fi-rr-comment-alt-dots"></i> 5
-									</a>
-								</div>
-							</div>
-							<div class="col col-lg-2">
-								<a href="nbdetail.shm"> <img src="img/nh-img1.jpg" alt=""
-									class="hood-box-img">
-								</a>
-							</div>
-						</div>
-					</article>
+                                </a>
+                                <div class="hood-box-counts">
+                                    <a href=""> <i class="fi fi-rr-eye"></i> 50
+                                    </a> <a href=""> <i class="fi fi-rr-heart"></i> 15
+                                </a> <a href=""> <i class="fi fi-rr-comment-alt-dots"></i> 5
+                                </a>
+                                </div>
+                            </div>
+                            <div class="col col-lg-2">
+                                <a href="nbdetail.shm"> <img src="img/nh-img1.jpg" alt=""
+                                                             class="hood-box-img">
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </c:forEach>
+            <%--				<div class="row">--%>
+            <%--					<article class="col hood-box-con box-left">--%>
+            <%--						<div class="row">--%>
+            <%--							<div class="col col-8">--%>
+            <%--								<a href="">--%>
+            <%--									<h5>메이커스 마크 30만원어치 샀다</h5>--%>
+            <%--									<p>12병이나 되네 나도 이제 버번파</p> <span class="hood-region">경기--%>
+            <%--										구리시 토평동</span> <span>와구리</span>--%>
+            <%--								</a>--%>
+            <%--								<div class="hood-box-counts">--%>
+            <%--									<a href=""> <i class="fi fi-rr-eye"></i> 50--%>
+            <%--									</a> <a href=""> <i class="fi fi-rr-heart"></i> 15--%>
+            <%--									</a> <a href=""> <i class="fi fi-rr-comment-alt-dots"></i> 5--%>
+            <%--									</a>--%>
+            <%--								</div>--%>
+            <%--							</div>--%>
+            <%--							<div class="col col-lg-2">--%>
+            <%--								<a href="nbdetail.shm"> <img src="img/nh-img1.jpg" alt=""--%>
+            <%--									class="hood-box-img">--%>
+            <%--								</a>--%>
+            <%--							</div>--%>
+            <%--						</div>--%>
+            <%--					</article>--%>
+            <%--					<article class="col hood-box-con">--%>
+            <%--						<div class="row">--%>
+            <%--							<div class="col col-8">--%>
+            <%--								<a href="">--%>
+            <%--									<h5>메이커스 마크 30만원어치 샀다</h5>--%>
+            <%--									<p>12병이나 되네 나도 이제 버번파</p> <span class="hood-region">경기--%>
+            <%--										구리시 토평동</span> <span>와구리</span>--%>
+            <%--								</a>--%>
+            <%--								<div class="hood-box-counts">--%>
+            <%--									<a href=""> <i class="fi fi-rr-eye"></i> 50--%>
+            <%--									</a> <a href=""> <i class="fi fi-rr-heart"></i> 15--%>
+            <%--									</a> <a href=""> <i class="fi fi-rr-comment-alt-dots"></i> 5--%>
+            <%--									</a>--%>
+            <%--								</div>--%>
+            <%--							</div>--%>
+            <%--							<div class="col col-lg-2">--%>
+            <%--								<a href="nbdetail.shm"> <img src="img/nh-img1.jpg" alt=""--%>
+            <%--									class="hood-box-img">--%>
+            <%--								</a>--%>
+            <%--							</div>--%>
+            <%--						</div>--%>
+            <%--					</article>--%>
 
-				</div>
-			</section>
+            <%--				</div>--%>
+        </section>
 
-		</div>
-	</main>
+    </div>
+</main>
 </body>
 </html>

@@ -2,7 +2,7 @@
 
 <!DOCTYPE sqlMapConfig PUBLIC "-//iBATIS.com//DTD SQL Map Config 2.0//EN" "http://ibatis.apache.org/dtd/sql-map-config-2.dtd">
 <sqlMapConfig>
-	<poroerties resource="board/ibatis/db.properties" />
+	<properties resource="board/ibatis/db.properties" />
 	<transactionManager type="JDBC">
 		<dataSource type="SIMPLE">
 			<property name="JDBC.Driver" value="${driver}" />
@@ -12,5 +12,4 @@
 		</dataSource>
 	</transactionManager>
 	<sqlMap resource="board/ibatis/nbboard.xml" />
-	<sqlMap resource="board/ibatis/shboard.xml" />
 </sqlMapConfig>

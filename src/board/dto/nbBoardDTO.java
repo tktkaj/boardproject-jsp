@@ -1,6 +1,6 @@
 package board.dto;
 
-import java.time.LocalDateTime;
+import java.util.Date;
 
 public class nbBoardDTO {
 	private int idx;
@@ -9,13 +9,14 @@ public class nbBoardDTO {
 	private String content;
 	private String img;
 	private String region;
-	private LocalDateTime writeDate;
+	private Date writeDate;
 	private int readCount;
 	private int likeCount;
 	private int recommendCount;
+
 	public nbBoardDTO() {}
 	public nbBoardDTO(int idx, String nickName, String title, String content, String img, String region,
-			LocalDateTime writeDate, int readCount, int likeCount, int recommendCount) {
+					  Date writeDate, int readCount, int likeCount, int recommendCount) {
 		this.idx = idx;
 		this.nickName = nickName;
 		this.title = title;
@@ -63,10 +64,10 @@ public class nbBoardDTO {
 	public void setRegion(String region) {
 		this.region = region;
 	}
-	public LocalDateTime getWriteDate() {
+	public Date getWriteDate() {
 		return writeDate;
 	}
-	public void setWriteDate(LocalDateTime writeDate) {
+	public void setWriteDate(Date writeDate) {
 		this.writeDate = writeDate;
 	}
 	public int getReadCount() {
