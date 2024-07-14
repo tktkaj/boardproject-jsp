@@ -9,26 +9,26 @@
 				<h5 class="topic">
 					<a href="#" class="topic-after">토픽</a> <a href="#">생활/편의</a>
 				</h5>
-				<h4>메이커스 마크 30만원어치 샀다</h4>
+				<h4>${dto.title}</h4>
 				<p class="user-info">
-					<span> <a href="#">경기 구리시 토평동</a>
+					<span> <a href="#">${dto.region}</a>
 					</span> ·
-					<sapn>와구리</span>
+					<span>${dto.nickName}</span>
 				</p>
 				<div class="board-info">
-					<span class="readcount"> <i class="fi fi-rs-eye">&nbsp;12</i>
-					</span> <span class="ripple"> <i class="fi fi-rs-comment">&nbsp;13</i>
+					<span class="readcount"> <i class="fi fi-rs-eye">&nbsp;${dto.readCount}</i>
+					</span> <span class="ripple"> <i class="fi fi-rs-comment">&nbsp;${dto.recommendCount}</i>
 					</span>
 				</div>
 			</div>
 			<div class="nb-content">
-				<div class="txt">12병이나 되네 나도 이제 버번파</div>
+				<div class="txt">${dto.content}</div>
 				<div class="like-box">
 					<span>
 						<button onclick="">
 							<i class="fi fi-rr-heart icon">&nbsp;좋아요</i>
 						</button>
-					</span> <span> <i class="fi fi-rs-comment">&nbsp;13</i>
+					</span> <span> <i class="fi fi-rs-comment">&nbsp;${dto.recommendCount}</i>
 					</span>
 				</div>
 			</div>
@@ -39,14 +39,14 @@
 				</form>
 			</div>
 			<div class="ripple-box">
-				<button type="button" onclick="">댓글 25개 더보기</button>
+				<button type="button" onclick="">댓글 ${dto.recommendCount}개 더보기</button>
 			</div>
 			<!-- 여기는 댓글 반복할 구간! -->
 			<div class="ripple-board">
 				<p>
-					<a href="#">케이엠</a> · <span>뽀구리</span>
+					<a href="#">경기도 구리시 토평동</a> · <span>뽀구리</span>
 				</p>
-				<div class="ripple-content">뭐래 소주가 좋아..</div>
+				<div class="ripple-content">안녕하세요!</div>
 				<div class="ripple-info">
 					<span>
 						<button type="button" onclick="">

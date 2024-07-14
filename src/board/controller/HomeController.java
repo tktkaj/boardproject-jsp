@@ -53,6 +53,8 @@ public class HomeController extends HttpServlet {
                 break;
             case "/nbdetail.shm":
                 request.setAttribute("main", "/WEB-INF/neighborhood/nbdetail.jsp");
+                int idx = Integer.parseInt(request.getParameter("idx"));
+                service.selectByIdx(request, response);
 
                 break;
 

@@ -22,7 +22,7 @@ public class nbBoardService {
 
     private nbBoardDAO dao = nbBoardDAO.getInstance();
 
-
+//    nbBoard 전체를 가져오는 메서드
     public void selectAll(HttpServletRequest request, HttpServletResponse response) {
         SqlMapClient mapper = SqlConfig.getSqlMap();
         ArrayList<nbBoardDTO> list = null;
@@ -33,8 +33,23 @@ public class nbBoardService {
         } catch (Exception e) {
             e.printStackTrace();
         }
-        System.out.println(list);
         request.setAttribute("list", list);
 
+    }
+
+//    idx를 받아 nbBoard 1개를 가져오는 메서드
+    public void selectByIdx(HttpServletRequest request, HttpServletResponse response) {
+        SqlMapClient mapper = SqlConfig.getSqlMap();
+        nbBoardDTO dto = null;
+        int idx = Integer.parseInt(request.getParameter("idx"));
+
+        try {
+            dto = dao.selectByIdx(mapper, idx);
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        System.out.println(dto);
+        request.setAttribute("dto", dto);
     }
 }

@@ -7,4 +7,8 @@
         select * from NBBOARD order by idx desc
     </select>
 
+    <select id="selectByIdx" resultClass="board.dto.nbBoardDTO" parameterClass="int">
+        select * from NBBOARD where idx = #idx#
+    </select>
+
 </sqlMap>

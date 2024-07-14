@@ -30,12 +30,12 @@
         </ul>
         <section class="container text-center hood-box-list">
             <c:set var="i" value="0"/>
-            <c:forEach var="board" items="${list}" begin="0" step="2">
+            <c:forEach var="board" items="${list}">
                 <div class="row">
                     <article class="col hood-box-con box-left">
                         <div class="row">
                             <div class="col col-8">
-                                <a href="nbdetail.shm">
+                                <a href="nbdetail.shm?idx=${board.idx}">
                                     <h5>${board.title}</h5>
                                     <p>${board.content}</p> <span class="hood-region">${board.region}</span>
                                     <span>${board.nickName}</span>
