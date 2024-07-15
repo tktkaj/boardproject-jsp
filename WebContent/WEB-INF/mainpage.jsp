@@ -16,14 +16,18 @@
             src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
             crossorigin="anonymous"></script><!-- 부트스트랩 cdn주소 -->
-    <link rel="stylesheet" href="css/mainpage.css"> <!-- mainpage.css 링크 -->
     <!-- 플래티콘 cdn주소 -->
     <link rel='stylesheet'
           href='https://cdn-uicons.flaticon.com/2.4.2/uicons-regular-straight/css/uicons-regular-straight.css'>
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.4.2/uicons-bold-rounded/css/uicons-bold-rounded.css'>
     <link rel='stylesheet'
           href='https://cdn-uicons.flaticon.com/2.4.2/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <%--    제이쿼리 cdn주소--%>
+    <script defer src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <!-- mainpage.css 링크 -->
+    <link rel="stylesheet" href="css/mainpage.css">
     <link rel="icon" href="img/favicon.ico"/>
+    <script defer src="/js/main.js"></script>
 </head>
 <body>
 <jsp:include page="header.jsp"></jsp:include>
