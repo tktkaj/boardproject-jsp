@@ -61,6 +61,10 @@ public class HomeController extends HttpServlet {
                 request.setAttribute("main", "/WEB-INF/login/login.jsp");
 
                 break;
+            case "/memberjoin.shm":
+                request.setAttribute("main", "/WEB-INF/login/memberjoin.jsp");
+
+                break;
             default:
                 break;
         }

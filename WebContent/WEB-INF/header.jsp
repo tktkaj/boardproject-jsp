@@ -19,7 +19,7 @@
 			<ul>
 				<li><a href="login.shm"><i class="fi fi-rs-user"></i>
 				</a></li>
-				<li><a href=""><i class="fi fi-rs-user-add"></i>
+				<li><a href="memberjoin.shm"><i class="fi fi-rs-user-add"></i>
 				</a></li>
 			</ul>
 		</div>
