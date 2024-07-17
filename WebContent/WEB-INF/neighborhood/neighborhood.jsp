@@ -29,102 +29,58 @@
             <li><span class="hood-nav-sort"><a><i class="fi fi-br-sort-alt"></i>최신순</a></span></li>
         </ul>
         <section class="container text-center hood-box-list">
-            <c:set var="i" value="0"/>
-            <c:forEach var="board" items="${list}">
-                <div class="row">
+            <c:forEach var="i" begin="0" end="${list.size()-1}">
+                <c:if test="${i%2==0}">
+                    <div class="row">
                     <article class="col hood-box-con box-left">
                         <div class="row">
                             <div class="col col-8">
-                                <a href="nbdetail.shm?idx=${board.idx}">
-                                    <h5>${board.title}</h5>
-                                    <p>${board.content}</p> <span class="hood-region">${board.region}</span>
-                                    <span>${board.nickName}</span>
+                                <a href="nbdetail.shm?idx=${list[i].idx}">
+                                    <h5>${list[i].title}</h5>
+                                    <p>${list[i].content}</p> <span class="hood-region">${list[i].region}</span>
+                                    <span>${list[i].nickName}</span>
                                 </a>
                                 <div class="hood-box-counts">
-                                    <a href=""> <i class="fi fi-rr-eye"></i> ${board.readCount} </a> <a href="">
-                                    <i class="fi fi-rr-heart">${board.likeCount}</i>
-                                </a> <a href=""> <i class="fi fi-rr-comment-alt-dots"></i> ${board.recommendCount}
+                                    <a href=""> <i class="fi fi-rr-eye"></i> ${list[i].readCount} </a> <a href="">
+                                    <i class="fi fi-rr-heart">${list[i].likeCount}</i>
+                                </a> <a href=""> <i class="fi fi-rr-comment-alt-dots"></i> ${list[i].recommendCount}
                                 </a>
                                 </div>
                             </div>
                             <div class="col col-lg-2">
-                                <a href="nbdetail.shm"> <img src="img/${board.img}" alt=""
+                                <a href="nbdetail.shm"> <img src="img/${list[i].img}" alt=""
                                                              class="hood-box-img" height="80%">
                                 </a>
                             </div>
                         </div>
                     </article>
+                </c:if>
+                <c:if test="${i%2==1}">
                     <article class="col hood-box-con">
                         <div class="row">
                             <div class="col col-8">
-                                <a href="">
-                                    <h5>메이커스 마크 30만원어치 샀다</h5>
-                                    <p>12병이나 되네 나도 이제 버번파</p> <span class="hood-region">경기
-										구리시 토평동</span> <span>와구리</span>
+                                <a href="nbdetail.shm?idx=${list[i].idx}">
+                                    <h5>${list[i].title}</h5>
+                                    <p>${list[i].content}</p> <span class="hood-region">${list[i].region}</span>
+                                    <span>${list[i].nickName}</span>
                                 </a>
                                 <div class="hood-box-counts">
-                                    <a href=""> <i class="fi fi-rr-eye"></i> 50
-                                    </a> <a href=""> <i class="fi fi-rr-heart"></i> 15
-                                </a> <a href=""> <i class="fi fi-rr-comment-alt-dots"></i> 5
+                                    <a href=""> <i class="fi fi-rr-eye"></i> ${list[i].readCount}
+                                    </a> <a href=""> <i class="fi fi-rr-heart"></i> ${list[i].likeCount}
+                                </a> <a href=""> <i class="fi fi-rr-comment-alt-dots"></i> ${list[i].recommendCount}
                                 </a>
                                 </div>
                             </div>
                             <div class="col col-lg-2">
-                                <a href="nbdetail.shm"> <img src="img/nh-img1.jpg" alt=""
-                                                             class="hood-box-img">
+                                <a href="nbdetail.shm"> <img src="img/${list[i].img}" alt=""
+                                                             class="hood-box-img" height="80%">
                                 </a>
                             </div>
                         </div>
                     </article>
-                </div>
+                    </div>
+                </c:if>
             </c:forEach>
-            <%--				<div class="row">--%>
-            <%--					<article class="col hood-box-con box-left">--%>
-            <%--						<div class="row">--%>
-            <%--							<div class="col col-8">--%>
-            <%--								<a href="">--%>
-            <%--									<h5>메이커스 마크 30만원어치 샀다</h5>--%>
-            <%--									<p>12병이나 되네 나도 이제 버번파</p> <span class="hood-region">경기--%>
-            <%--										구리시 토평동</span> <span>와구리</span>--%>
-            <%--								</a>--%>
-            <%--								<div class="hood-box-counts">--%>
-            <%--									<a href=""> <i class="fi fi-rr-eye"></i> 50--%>
-            <%--									</a> <a href=""> <i class="fi fi-rr-heart"></i> 15--%>
-            <%--									</a> <a href=""> <i class="fi fi-rr-comment-alt-dots"></i> 5--%>
-            <%--									</a>--%>
-            <%--								</div>--%>
-            <%--							</div>--%>
-            <%--							<div class="col col-lg-2">--%>
-            <%--								<a href="nbdetail.shm"> <img src="img/nh-img1.jpg" alt=""--%>
-            <%--									class="hood-box-img">--%>
-            <%--								</a>--%>
-            <%--							</div>--%>
-            <%--						</div>--%>
-            <%--					</article>--%>
-            <%--					<article class="col hood-box-con">--%>
-            <%--						<div class="row">--%>
-            <%--							<div class="col col-8">--%>
-            <%--								<a href="">--%>
-            <%--									<h5>메이커스 마크 30만원어치 샀다</h5>--%>
-            <%--									<p>12병이나 되네 나도 이제 버번파</p> <span class="hood-region">경기--%>
-            <%--										구리시 토평동</span> <span>와구리</span>--%>
-            <%--								</a>--%>
-            <%--								<div class="hood-box-counts">--%>
-            <%--									<a href=""> <i class="fi fi-rr-eye"></i> 50--%>
-            <%--									</a> <a href=""> <i class="fi fi-rr-heart"></i> 15--%>
-            <%--									</a> <a href=""> <i class="fi fi-rr-comment-alt-dots"></i> 5--%>
-            <%--									</a>--%>
-            <%--								</div>--%>
-            <%--							</div>--%>
-            <%--							<div class="col col-lg-2">--%>
-            <%--								<a href="nbdetail.shm"> <img src="img/nh-img1.jpg" alt=""--%>
-            <%--									class="hood-box-img">--%>
-            <%--								</a>--%>
-            <%--							</div>--%>
-            <%--						</div>--%>
-            <%--					</article>--%>
-
-            <%--				</div>--%>
         </section>
 
     </div>
