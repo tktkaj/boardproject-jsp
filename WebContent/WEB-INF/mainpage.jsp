@@ -27,7 +27,7 @@
     <!-- mainpage.css 링크 -->
     <link rel="stylesheet" href="css/mainpage.css">
     <link rel="icon" href="img/favicon.ico"/>
-    <script defer src="/js/main.js"></script>
+    <script defer src="js/main.js"></script>
 </head>
 <body>
 <jsp:include page="header.jsp"></jsp:include>

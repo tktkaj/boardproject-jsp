@@ -25,4 +25,8 @@ public class nbBoardDAO {
     public nbBoardDTO selectByIdx(SqlMapClient mapper, int idx) throws SQLException {
         return (nbBoardDTO) mapper.queryForObject("selectByIdx", idx);
     }
+
+	public void updateReadCount(SqlMapClient mapper, int idx) throws SQLException {
+		mapper.update("updateReadCount",idx);
+	}
 }

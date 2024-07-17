@@ -7,6 +7,8 @@ import com.ibatis.sqlmap.client.SqlMapClient;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+
+import java.sql.SQLException;
 import java.util.ArrayList;
 
 public class nbBoardService {
@@ -51,4 +53,15 @@ public class nbBoardService {
         }
         request.setAttribute("dto", dto);
     }
+    
+//	조회수 up 메서드
+    public void updateReadCount(HttpServletRequest request, HttpServletResponse response) {
+		SqlMapClient mapper = SqlConfig.getSqlMap();
+		int idx = Integer.parseInt(request.getParameter("idx"));
+		try {
+			dao.updateReadCount(mapper,idx);
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+	}
 }

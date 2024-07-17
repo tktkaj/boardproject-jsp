@@ -10,5 +10,7 @@
     <select id="selectByIdx" resultClass="board.dto.nbBoardDTO" parameterClass="int">
         select * from NBBOARD where idx = #idx#
     </select>
-
+	<update id="updateReadCount" parameterClass="int">
+		update NBBOARD set readcount = readcount+1 where idx = #idx#
+	</update>
 </sqlMap>
