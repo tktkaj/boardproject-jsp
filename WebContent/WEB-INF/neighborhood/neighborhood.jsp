@@ -5,7 +5,7 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Insert title here</title>
+    <title>양배추와 함께하는 동네 생활</title>
 </head>
 <body>
 <main>
@@ -47,9 +47,9 @@
                                 </a>
                                 </div>
                             </div>
-                            <div class="col col-lg-2">
-                                <a href="nbdetail.shm"> <img src="img/${list[i].img}" alt=""
-                                                             class="hood-box-img" height="80%">
+                            <div class="col">
+                                <a href="nbdetail.shm?idx=${list[i].idx}"> <img src="img/${list[i].img}" alt=""
+                                                             class="hood-box-img">
                                 </a>
                             </div>
                         </div>
@@ -71,9 +71,9 @@
                                 </a>
                                 </div>
                             </div>
-                            <div class="col col-lg-2">
-                                <a href="nbdetail.shm"> <img src="img/${list[i].img}" alt=""
-                                                             class="hood-box-img" height="80%">
+                            <div class="col">
+                                <a href="nbdetail.shm?idx=${list[i].idx}"> <img src="img/${list[i].img}" alt=""
+                                                             class="hood-box-img">
                                 </a>
                             </div>
                         </div>
