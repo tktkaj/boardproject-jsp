@@ -520,3 +520,48 @@ header {
     border-radius: 5px;
     font-size: 18px;
 }
+
+
+/* loginpage.jsp */
+
+.login .row{
+    margin: 50px;
+    display: flex;
+    justify-content: center;
+}
+.login-box p {
+    margin-top: 15px;
+    font-size: 10px;
+}
+.login-box div{
+
+    margin: 20px 0;
+
+}
+.login-box .title{
+    text-align: center;
+    padding: 20px 0;
+}
+.login .btn{
+    width: 100%;
+    border: rgb(118, 12, 118);
+    background-color: blueviolet;
+    padding: 10px 0;
+}
+.login-joinbtn{
+    display: flex;
+    justify-content: center;
+    
+}
+.login-joinbtn p{
+    margin: 0;
+    font-size: 11px;
+}
+.login-joinbtn button{
+    padding: 0;
+    padding-left: 10px;
+    border: 0;
+    background-color: white;
+    font-size: 11px;
+    color: blueviolet;
+}
