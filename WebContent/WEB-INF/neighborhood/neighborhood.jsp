@@ -41,8 +41,8 @@
                                     <span>${list[i].nickName}</span>
                                 </a>
                                 <div class="hood-box-counts">
-                                    <a href=""> <i class="fi fi-rr-eye"></i> ${list[i].readCount} </a> <a href="">
-                                    <i class="fi fi-rr-heart">${list[i].likeCount}</i>
+                                    <a href=""> <i class="fi fi-rr-eye"></i> ${list[i].readCount}
+                                    </a> <a href=""> <i class="fi fi-rr-heart"></i> ${list[i].likeCount}
                                 </a> <a href=""> <i class="fi fi-rr-comment-alt-dots"></i> ${list[i].recommendCount}
                                 </a>
                                 </div>

@@ -46,7 +46,10 @@ header {
     font-weight: bolder;
     font-size: 30px;
 }
-
+.logo-img{
+	width: 50px;
+	
+}
 .menu {
     display: flex;
     gap: 40px;

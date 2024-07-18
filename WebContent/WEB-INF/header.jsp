@@ -6,7 +6,7 @@
 	<div class="row">
 		<div class="col-6 menu">
 			<a href="home.shm" id="logo">
-			<img alt="logo" src="img/logo.png">
+			<img alt="logo" src="img/logo (2).png" class="logo-img">
 			양배추
 			</a>
 			<ul>
