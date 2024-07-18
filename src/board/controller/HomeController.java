@@ -58,7 +58,8 @@ public class HomeController extends HttpServlet {
                 int idx = Integer.parseInt(request.getParameter("idx"));
                 service.updateReadCount(request, response);
                 service.selectByIdx(request, response);
-               
+
+
                 break;
             case "/login.shm":
                 request.setAttribute("main", "/WEB-INF/login/login.jsp");
