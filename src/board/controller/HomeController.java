@@ -42,7 +42,9 @@ public class HomeController extends HttpServlet {
 
         nbBoardService service = nbBoardService.getInstance();
         switch (context) {
-
+        	case "/home.shm":
+            request.setAttribute("main", "/WEB-INF/home/home.jsp");
+            break;
             case "/secondhand.shm":
                 request.setAttribute("main", "/WEB-INF/secondhand/secondhand.jsp");
 

@@ -5,12 +5,12 @@
 <header class="container">
 	<div class="row">
 		<div class="col-6 menu">
-			<a href="#" id="logo">
+			<a href="home.shm" id="logo">
 			<img alt="logo" src="img/logo.png">
 			양배추
 			</a>
 			<ul>
-				<li><a href="#">홈</a></li>
+				<li><a href="home.shm">홈</a></li>
 				<li><a href="secondhand.shm">중고거래</a></li>
 				<li><a href="neighborhood.shm">동네생활</a></li>
 			</ul>
