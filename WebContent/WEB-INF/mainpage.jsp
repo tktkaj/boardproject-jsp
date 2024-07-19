@@ -32,7 +32,7 @@
 <%--    제이쿼리 cdn주소--%>
 <script defer src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 <!-- mainpage.css 링크 -->
-<link rel="stylesheet" href="${path}/css/mainpage.css?힣">
+<link rel="stylesheet" href="${path}/css/mainpage.css?훗">
 <link rel="icon" href="img/favicon.ico" />
 <script defer src="${path}/js/main.js"></script>
 </head>
